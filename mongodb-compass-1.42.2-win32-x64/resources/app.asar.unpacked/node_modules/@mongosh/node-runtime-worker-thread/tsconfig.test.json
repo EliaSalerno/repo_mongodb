@@ -1,0 +1,11 @@
+{
+  "extends": "@mongodb-js/tsconfig-mongosh/tsconfig.test.json",
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "outDir": "./lib",
+    "allowJs": false
+  },
+  "files": ["./src/index.d.ts"]
+}
