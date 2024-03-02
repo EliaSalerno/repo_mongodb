@@ -6,6 +6,8 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.9/community' >> /etc/apk/repos
 RUN apk update && apk upgrade
 RUN apk add -v --no-cache mongodb
 
+CMD mkdir -p /data/db
+
 VOLUME ["/data/db"]
 EXPOSE 27017 28017
 EXPOSE 27018 28018
