@@ -1,0 +1,5 @@
+-Per eseguire il container lanciare nel prompt la build del dockerfile.
+-In seconda battuta eseguire il seguente comando: 
+ docker run -d --name mongodb -v volumereale:/data/db -p 27017:27017 nome_build
+-Da qui si possono fare due scelte: o lavorare nella shell di mongo da shell di alpine oppure aprire mongo compass
+(anche scaricando lo zip) ed effettuare il collegamento impostato di default dovrebbe funzionare a primo colpo
